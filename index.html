@@ -26,13 +26,23 @@
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-image"></div>
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="assets/dinner.jpeg"
+        aria-hidden="true">
+        <source src="assets/toscane_drone_sunset.mp4" type="video/mp4">
+      </video>
       <div class="hero-overlay"></div>
       <div class="hero-content reveal">
         <p class="eyebrow">17 — 19 september 2027 · Toscane</p>
         <h1 id="hero-title">Floris <span>&</span> Amber</h1>
-        <p class="hero-sub">Een weekend vol liefde, lange tafels en Toscaanse avonden.</p>
-        <a class="button button-light" href="#welkom">Ontdek het weekend</a>
+        <p class="hero-sub">Drie dagen liefde, warmte en gezelligheid.</p>
+        <a class="button button-light" href="#welkom">Vier het met ons</a>
       </div>
       <a href="#welkom" class="scroll-cue" aria-label="Scroll naar beneden">↓</a>
     </section>
@@ -48,7 +58,6 @@
 
     <section class="countdown-section">
       <div class="countdown-wrap reveal">
-        <p class="eyebrow dark">We tellen af naar vrijdag 17 september 2027</p>
         <div class="countdown" id="countdown" aria-live="polite">
           <div><strong id="days">000</strong><span>dagen</span></div>
           <div><strong id="hours">00</strong><span>uur</span></div>
@@ -64,7 +73,7 @@
       <div class="section-heading reveal">
         <p class="eyebrow dark">Het weekend</p>
         <h2>Programma</h2>
-        <p>Het programma is voorlopig en kan nog iets wijzigen. De belangrijkste momenten staan hieronder alvast voor jullie op een rij.</p>
+        <p>De tijden zijn nog globaal en kunnen veranderen. Dit zijn alvast de belangrijkste momenten.</p>
       </div>
 
       <div class="timeline">
@@ -73,8 +82,8 @@
           <div>
             <p class="day-date">Vrijdag 17 september</p>
             <h3>Aankomst & pizzaparty</h3>
-            <div class="schedule-row"><span>15:30</span><p>Inchecken en rustig landen in Toscane</p></div>
-            <div class="schedule-row"><span>Avond</span><p>Pizzaparty en samen het weekend aftrappen</p></div>
+            <div class="schedule-row"><span>15:30</span><p>Inchecken</p></div>
+            <div class="schedule-row"><span>± 19:30</span><p>Pizzaparty</p></div>
           </div>
         </article>
 
@@ -83,10 +92,13 @@
           <div>
             <p class="day-date">Zaterdag 18 september</p>
             <h3>De bruiloft</h3>
-            <div class="schedule-row"><span>Ochtend</span><p>Ontbijt en vrije tijd</p></div>
-            <div class="schedule-row"><span>Middag</span><p>Lunch en voorbereiden voor de ceremonie</p></div>
-            <div class="schedule-row"><span>15:30</span><p>Ceremonie</p></div>
-            <div class="schedule-row"><span>Avond</span><p>Diner, speeches en feest</p></div>
+            <div class="schedule-row"><span>08:30–10:00</span><p>Ontbijt</p></div>
+            <div class="schedule-row"><span>± 13:00</span><p>Lunch</p></div>
+            <div class="schedule-row"><span>± 15:00</span><p>Voorbereiden voor de ceremonie</p></div>
+            <div class="schedule-row"><span>± 17:00/17:15</span><p>Ceremonie</p></div>
+            <div class="schedule-row"><span>± 19:00</span><p>Diner</p></div>
+            <div class="schedule-row"><span>± 22:00</span><p>Feest</p></div>
+            <div class="schedule-row"><span>01:00</span><p>Einde feest</p></div>
           </div>
         </article>
 
@@ -95,8 +107,8 @@
           <div>
             <p class="day-date">Zondag 19 september</p>
             <h3>Ontbijt & vertrek</h3>
-            <div class="schedule-row"><span>Ochtend</span><p>Gezamenlijk ontbijt</p></div>
-            <div class="schedule-row"><span>Daarna</span><p>Uitchecken en afscheid nemen</p></div>
+            <div class="schedule-row"><span>08:30–10:00</span><p>Ontbijt</p></div>
+            <div class="schedule-row"><span>10:00</span><p>Uitchecken</p></div>
           </div>
         </article>
       </div>
@@ -107,7 +119,7 @@
       <div class="split-copy reveal">
         <p class="eyebrow dark">Onze plek</p>
         <h2>Villa Grassina</h2>
-        <p>Drie dagen samen op één plek, tussen de Toscaanse heuvels. Overdag ontspannen bij het zwembad, ’s avonds lange tafels, zacht licht en goede wijn.</p>
+        <p>Drie dagen samen op één plek, tussen de Toscaanse heuvels. Overdag ontspannen bij het zwembad en ’s avonds samen aan lange tafels.</p>
         <p>Voor jullie verblijf wordt alles door ons geregeld. Jullie ontvangen voorafgaand aan de bruiloft meer informatie over de accommodatie en de kamerindeling.</p>
       </div>
     </section>
@@ -115,11 +127,11 @@
     <section class="section map-section">
       <div class="map-grid">
         <div class="map-copy reveal">
-          <p class="eyebrow dark">La dolce vita</p>
-          <h2>Een weekend in Italië</h2>
-          <p>De reis naar Italië regel je naar eigen wens. Vlieg je naar Pisa? Dan zorgen wij vanaf een centraal verzamelpunt voor vervoer naar de locatie. Meer informatie hierover volgt.</p>
+          <p class="eyebrow dark">Op naar Toscane</p>
+          <h2>De reis</h2>
+          <p>De reis naar Italië regel je naar eigen wens. Vlieg je naar Pisa? Dan zorgen wij vanaf een centraal verzamelpunt voor vervoer naar de locatie. Er wordt één transfer geregeld op een vast tijdstip. Meer informatie hierover volgt.</p>
         </div>
-        <img src="assets/toscane-map.jpeg" alt="Aquarelkaart van Italië en Toscane" class="map-art reveal" />
+        <img src="assets/toscane-map.jpeg" alt="Aquarelkaart van Toscane" class="map-art reveal" />
       </div>
     </section>
 
@@ -133,39 +145,43 @@
 
       <div class="cards">
         <article class="card reveal">
-          <div class="icon">⌂</div>
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><path d="M9 31 32 11l23 20"/><path d="M15 28v25h34V28"/><path d="M27 53V38h10v15"/></svg>
+          </div>
           <h3>Verblijf</h3>
-          <p>De accommodatie voor het weekend betalen en regelen wij voor jullie. De kamerindeling volgt later.</p>
+          <p>Voor jullie verblijf wordt alles door ons geregeld én betaald. Jullie ontvangen voorafgaand aan de bruiloft meer informatie over de accommodatie en de kamerindeling.</p>
         </article>
 
         <article class="card reveal">
-          <div class="icon">✈</div>
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><path d="M7 34 57 16l-9 31-15-9-8 11-3-16Z"/><path d="m22 33 26-17"/></svg>
+          </div>
           <h3>Reis & transfer</h3>
-          <p>Je regelt je eigen reis naar Italië. Vanaf Pisa organiseren wij één transfer op een vast tijdstip naar de locatie.</p>
+          <p>De reis regel je zelf. Vanaf Pisa organiseren wij één transfer op een vast tijdstip vanaf een centraal verzamelpunt naar de locatie. De precieze informatie volgt later.</p>
         </article>
 
         <article class="card reveal">
-          <div class="icon">♢</div>
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><path d="M27 10h10l3 9 10 10-8 25H22l-8-25 10-10Z"/><path d="M24 19h16"/><path d="m22 35 20 0"/></svg>
+          </div>
           <h3>Dresscode</h3>
-          <p><strong>Summer Chic.</strong> Voor de dames: kleurrijk is heel welkom. Denk elegant, zomers en feestelijk.</p>
+          <p><strong>Summer chic.</strong> Voor de dames: kleurrijk.</p>
         </article>
 
         <article class="card reveal">
-          <div class="icon">☼</div>
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><circle cx="23" cy="21" r="8"/><circle cx="42" cy="23" r="7"/><path d="M9 51c1-11 6-17 14-17s13 6 14 17"/><path d="M34 51c1-9 4-14 10-14 7 0 10 6 11 14"/></svg>
+          </div>
           <h3>Adults only</h3>
           <p>Ondanks dat we dol zijn op jullie kleintjes, hebben we er toch voor gekozen om dit weekend zonder kinderen te vieren.</p>
         </article>
 
         <article class="card reveal">
-          <div class="icon">⌁</div>
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64"><circle cx="31" cy="32" r="17"/><path d="M8 12v17"/><path d="M13 12v17"/><path d="M8 21h5"/><path d="M53 12c-4 8-4 15 0 21v19"/><path d="M48 52h10"/></svg>
+          </div>
           <h3>Dieetwensen</h3>
-          <p>Geef dieetwensen of allergieën uiterlijk bij de RSVP door. De deadline daarvoor is gelijk aan de RSVP-deadline.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="icon">♡</div>
-          <h3>Cadeaus</h3>
-          <p>Jullie aanwezigheid is voor ons meer dan genoeg. We vragen daarom geen cadeaus.</p>
+          <p>Geef dieetwensen of allergieën uiterlijk bij de RSVP door. Hiervoor geldt dezelfde deadline als voor de RSVP.</p>
         </article>
       </div>
     </section>
@@ -177,7 +193,7 @@
           <h2>FAQ</h2>
         </div>
         <details class="reveal"><summary>Wanneer krijgen we de exacte tijden?</summary><p>Zodra het programma definitief is, werken we de website bij met de laatste tijden en informatie.</p></details>
-        <details class="reveal"><summary>Moeten we zelf een hotel boeken?</summary><p>Nee. Voor het verblijf tijdens het trouwweekend wordt alles door ons geregeld.</p></details>
+        <details class="reveal"><summary>Moeten we zelf een hotel boeken?</summary><p>Nee. Voor jullie verblijf tijdens het trouwweekend wordt alles door ons geregeld en betaald.</p></details>
         <details class="reveal"><summary>Kunnen we met de transfer vanaf Pisa mee?</summary><p>Ja. Er komt één transfer op een vast tijdstip vanaf een centraal verzamelpunt bij Pisa. De precieze informatie volgt later.</p></details>
       </div>
     </section>
@@ -187,8 +203,7 @@
         <p class="eyebrow">We hopen dat je erbij bent</p>
         <h2>RSVP</h2>
         <p>Laat ons weten of je het weekend met ons in Toscane komt vieren.</p>
-        <a class="button button-light" href="mailto:?subject=RSVP%20Floris%20%26%20Amber%20-%20Toscane%202027&body=Naam%3A%0AIk%20ben%20erbij%3A%20ja%20%2F%20nee%0ADieetwensen%20of%20allergie%C3%ABn%3A%0AOpmerking%3A">RSVP versturen</a>
-        <p class="small-note">Voeg hier later eventueel jullie definitieve RSVP-deadline aan toe.</p>
+        <p class="small-note">De definitieve RSVP-deadline en manier van aanmelden volgen nog.</p>
       </div>
     </section>
   </main>

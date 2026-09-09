@@ -382,3 +382,101 @@ footer {
   .countdown span { letter-spacing: .08em; font-size: .62rem; }
   .schedule-row { grid-template-columns: 1fr; gap: 0; padding: 8px 0 12px; }
 }
+
+
+.rsvp-form {
+  margin: 42px auto 0;
+  max-width: 760px;
+  text-align: left;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.field.full { grid-column: 1 / -1; }
+.field > span,
+.field legend {
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+.fieldset,
+fieldset.field {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.rsvp-form input[type="text"],
+.rsvp-form select,
+.rsvp-form textarea {
+  width: 100%;
+  border: 1px solid rgba(255,255,255,.45);
+  border-radius: 0;
+  background: rgba(255,255,255,.08);
+  color: var(--white);
+  padding: 13px 14px;
+  font: inherit;
+  outline: none;
+}
+.rsvp-form input[type="text"]:focus,
+.rsvp-form select:focus,
+.rsvp-form textarea:focus {
+  border-color: rgba(255,255,255,.9);
+  background: rgba(255,255,255,.12);
+}
+.rsvp-form select option { color: var(--ink); }
+.rsvp-form textarea { resize: vertical; }
+.rsvp-form ::placeholder { color: rgba(255,255,255,.65); }
+.choice-row,
+.choice-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+.choice-stack { flex-direction: column; gap: 8px; }
+.choice-row label,
+.choice-stack label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.rsvp-button {
+  margin-top: 30px;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+}
+.rsvp-button:hover {
+  background: var(--white);
+  color: var(--olive);
+}
+.form-note {
+  margin: 18px 0 0;
+  font-size: .72rem;
+  opacity: .72;
+}
+.rsvp-thanks {
+  margin-top: 24px;
+  font-family: var(--serif);
+  font-size: 1.4rem;
+}
+.hidden-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+}
+
+@media (max-width: 620px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .field.full { grid-column: auto; }
+}

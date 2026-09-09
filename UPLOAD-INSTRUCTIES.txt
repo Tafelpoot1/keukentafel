@@ -1,0 +1,17 @@
+RSVP-UPDATE VOOR BESTAANDE REPOSITORY 'keukentafel'
+
+Vervang in dezelfde repository:
+- index.html
+- styles.css
+- script.js
+
+Laat CNAME, assets en alle overige bestanden staan zoals ze zijn.
+
+Het RSVP-formulier stuurt inzendingen naar:
+weddingaenf@outlook.com
+
+BELANGRIJK:
+Bij de eerste testinzending stuurt FormSubmit een activatiemail naar weddingaenf@outlook.com.
+Klik daarin één keer op de bevestigingslink. Daarna komen RSVP's normaal per e-mail binnen.
+
+Test na uploaden zelf één RSVP.

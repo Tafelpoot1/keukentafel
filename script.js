@@ -44,3 +44,12 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const params = new URLSearchParams(window.location.search);
+if (params.get('rsvp') === 'bedankt') {
+  const thanks = document.getElementById('rsvp-thanks');
+  if (thanks) {
+    thanks.hidden = false;
+    setTimeout(() => thanks.scrollIntoView({ behavior: 'smooth', block: 'center' }), 250);
+  }
+}

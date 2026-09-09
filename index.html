@@ -203,7 +203,62 @@
         <p class="eyebrow">We hopen dat je erbij bent</p>
         <h2>RSVP</h2>
         <p>Laat ons weten of je het weekend met ons in Toscane komt vieren.</p>
-        <p class="small-note">De definitieve RSVP-deadline en manier van aanmelden volgen nog.</p>
+
+        <form class="rsvp-form" action="https://formsubmit.co/weddingaenf@outlook.com" method="POST">
+          <input type="hidden" name="_subject" value="Nieuwe RSVP — Floris & Amber">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://weddingaenf.nl/?rsvp=bedankt#rsvp">
+          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+
+          <div class="form-grid">
+            <label class="field full">
+              <span>Naam / namen *</span>
+              <input type="text" name="Naam / namen" required autocomplete="name">
+            </label>
+
+            <fieldset class="field full">
+              <legend>Zijn jullie erbij? *</legend>
+              <div class="choice-row">
+                <label><input type="radio" name="Aanwezig" value="Ja" required> Ja, graag!</label>
+                <label><input type="radio" name="Aanwezig" value="Nee"> Helaas niet</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="field full">
+              <legend>Welke dagen zijn jullie erbij?</legend>
+              <div class="choice-stack">
+                <label><input type="checkbox" name="Vrijdag 17 september" value="Ja"> Vrijdag 17 september</label>
+                <label><input type="checkbox" name="Zaterdag 18 september" value="Ja"> Zaterdag 18 september</label>
+                <label><input type="checkbox" name="Zondag 19 september" value="Ja"> Zondag 19 september</label>
+              </div>
+            </fieldset>
+
+            <label class="field">
+              <span>Transfer vanaf Pisa?</span>
+              <select name="Transfer vanaf Pisa">
+                <option value="">Kies een optie</option>
+                <option value="Ja">Ja</option>
+                <option value="Nee">Nee</option>
+                <option value="Nog niet bekend">Nog niet bekend</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Dieetwensen / allergieën</span>
+              <input type="text" name="Dieetwensen / allergieën" placeholder="Bijv. vegetarisch, gluten…">
+            </label>
+
+            <label class="field full">
+              <span>Opmerkingen</span>
+              <textarea name="Opmerkingen" rows="4"></textarea>
+            </label>
+          </div>
+
+          <button class="button rsvp-button" type="submit">Verstuur RSVP</button>
+          <p class="form-note">Na de eerste testinzending ontvangt weddingaenf@outlook.com één activatiemail van de formulierdienst. Die moet één keer bevestigd worden.</p>
+          <p class="rsvp-thanks" id="rsvp-thanks" hidden>Dankjewel! Jullie RSVP is verstuurd. 🤍</p>
+        </form>
       </div>
     </section>
   </main>

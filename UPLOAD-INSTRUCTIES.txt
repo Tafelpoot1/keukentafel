@@ -1,17 +1,19 @@
-RSVP-UPDATE VOOR BESTAANDE REPOSITORY 'keukentafel'
+UPDATE 20-09-2026 — bestaande repository 'keukentafel'
 
-Vervang in dezelfde repository:
+Vervang alleen:
 - index.html
 - styles.css
-- script.js
 
-Laat CNAME, assets en alle overige bestanden staan zoals ze zijn.
+Laat script.js, CNAME, video en assets staan.
 
-Het RSVP-formulier stuurt inzendingen naar:
-weddingaenf@outlook.com
-
-BELANGRIJK:
-Bij de eerste testinzending stuurt FormSubmit een activatiemail naar weddingaenf@outlook.com.
-Klik daarin één keer op de bevestigingslink. Daarna komen RSVP's normaal per e-mail binnen.
-
-Test na uploaden zelf één RSVP.
+Wijzigingen:
+- Hero: 17 · 18 · 19 september — Toscane; onderste zin weg
+- Tafelfoto minder groot
+- Dag 1: Benvenuti!
+- Dag 2: Klaarmaken; einde feest/tijd weg
+- Dag 3: Afscheidsontbijt; uitchecktijd weg
+- Kamerindeling uit teksten verwijderd
+- FAQ +1 toegevoegd
+- FAQ speeches/vragen: weddingaenf@outlook.com
+- RSVP: alleen keuze van dagen verwijderd
+- Verder niets gewijzigd

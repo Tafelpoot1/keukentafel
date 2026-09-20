@@ -480,3 +480,9 @@ fieldset.field {
   .form-grid { grid-template-columns: 1fr; }
   .field.full { grid-column: auto; }
 }
+
+/* 20-09-2026: alleen de tafelfoto minder prominent */
+.image-break-dinner { min-height: 38vh; }
+@media (max-width: 820px) {
+  .image-break-dinner { min-height: 32vh; }
+}

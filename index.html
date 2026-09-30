@@ -94,7 +94,7 @@
             <div class="schedule-row"><span>08:30–10:00</span><p>Ontbijt</p></div>
             <div class="schedule-row"><span>± 13:00</span><p>Lunch</p></div>
             <div class="schedule-row"><span>± 15:00</span><p>Klaarmaken</p></div>
-            <div class="schedule-row"><span>± 16:00</span><p>Ceremonie</p></div>
+            <div class="schedule-row"><span>± 17:00/17:15</span><p>Ceremonie</p></div>
             <div class="schedule-row"><span>± 19:00</span><p>Diner</p></div>
             <div class="schedule-row"><span>± 22:00</span><p>Feest</p></div>
           </div>
@@ -203,12 +203,9 @@
         <h2>RSVP</h2>
         <p>Laat ons weten of je het weekend met ons in Toscane komt vieren.</p>
 
-        <form class="rsvp-form" action="https://formsubmit.co/weddingaenf@outlook.com" method="POST">
-          <input type="hidden" name="_subject" value="Nieuwe RSVP — Floris & Amber">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://weddingaenf.nl/?rsvp=bedankt#rsvp">
-          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+        <form class="rsvp-form" action="https://submit-form.com/4K4pN6z4J" method="POST">
+          <input type="hidden" name="_email.subject" value="Nieuwe RSVP — Floris & Amber">
+          <input type="text" name="_honeypot" class="hidden-field" tabindex="-1" autocomplete="off">
 
           <div class="form-grid">
             <label class="field full">
@@ -246,7 +243,7 @@
           </div>
 
           <button class="button rsvp-button" type="submit">Verstuur RSVP</button>
-          <p class="form-note">Na de eerste testinzending ontvangt weddingaenf@outlook.com één activatiemail van de formulierdienst. Die moet één keer bevestigd worden.</p>
+          <p class="form-note">Na het versturen verschijnt hier een bevestiging.</p>
           <p class="rsvp-thanks" id="rsvp-thanks" hidden>Dankjewel! Jullie RSVP is verstuurd. 🤍</p>
         </form>
       </div>
@@ -258,5 +255,53 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    (() => {
+      const form = document.querySelector(".rsvp-form");
+      const thanks = document.getElementById("rsvp-thanks");
+      if (!form || !thanks) return;
+
+      const button = form.querySelector('button[type="submit"]');
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        if (button.disabled) return;
+
+        const originalText = button.textContent;
+        button.disabled = true;
+        button.textContent = "Even versturen…";
+
+        try {
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData.entries());
+
+          const response = await fetch(form.action, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body: JSON.stringify({
+              ...data,
+              _email: {
+                subject: "Nieuwe RSVP — Floris & Amber"
+              }
+            })
+          });
+
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+          form.reset();
+          thanks.hidden = false;
+          button.textContent = "RSVP verstuurd ✓";
+        } catch (error) {
+          console.error("RSVP verzenden mislukt:", error);
+          alert("Het versturen is niet gelukt. Probeer het alsjeblieft nog een keer.");
+          button.disabled = false;
+          button.textContent = originalText;
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
